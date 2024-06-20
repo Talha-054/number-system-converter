@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number system converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1623055e07.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.jpg" />
+
+    <!-- bg-gradient-to-r from-lime-400 to-lime-500 -->
+</head>
+<body class=" bg-gradient-to-r from-slate-900 to-slate-700">
+
+    <div id="heading" class=" p-4 flex justify-center items-center py-12">
+        <span class="text-white text-4xl text-center border-b-2 border-white/30 font-bold">Number System Converter</span>
+    </div>
+
+    <section id="user-choice-area" class="flex  justify-center items-center mt-10">
+
+        <div id="from-container" class="mx-4 grow flex flex-col justify-center items-end">
+            
+            <select  id="from" class="p-4 bg-inherit shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:cursor-pointer text-white backdrop-blur">
+                <option class="bg-black/50" value="10" selected>Decimal</option>
+                <option class="bg-black/50" value="16">HexaDecimal</option>
+                <option class="bg-black/50" value="8">Octal</option>
+                <option class="bg-black/50" value="2">Binary</option>
+            </select>
+        </div>
+
+        <span class="text-2xl text-white"><i class="fa-solid fa-arrow-right text-white"></i></span>
+
+        <div id="to-container" class="grow flex flex-col justify-center mx-4 items-start">
+            
+            <select id="to" class="p-4 bg-inherit shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:cursor-pointer text-white backdrop-blur">
+                <option class="bg-black/50" value="10" >Decimal</option>
+                <option class="bg-black/50" value="16">HexaDecimal</option>
+                <option class="bg-black/50" value="8">Octal</option>
+                <option class="bg-black/50" value="2" selected>Binary</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="input-value" class="flex flex-col justify-center my-16 items-center">
+        <div id="input-container" class="flex justify-center items-center p-5">
+            <input id="input" type="number" placeholder="write here" class="p-2 my-4 w-[350px] font-bold">
+        </div>
+
+        <div id="convert-button" class="flex flex-col justify-center items-center">
+            <button id="convert" class="p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:scale-105 duration-150 text-white backdrop-blur">Convert</button>
+            <span class="text-xl text-white p-2"><i class="fa-solid fa-arrow-down"></i></span>
+        </div>
+
+        <div id="input-container" class="flex justify-center items-center p-5">
+            <p id="result" class="p-2 my-4 w-[350px] bg-white h-[40px] font-bold"></p>
+        </div>
+
+        <div id="convert-button">
+            <button id="convert" class="p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:scale-105 duration-150 text-white backdrop-blur">See Solution</button>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="func_1.js"></script>
+    <script type="module" src="func_2.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
