@@ -5,7 +5,7 @@ export function restToDec(input, inputNumberBase){
 
     let output = 0
     let length = input.split('').length - 1;
-    let alphs = ['A','B','C','D','E','F'];
+    let alphs = ['A','B','C','D','E','F','a','b','c','d','e','f'];
 
     for (let no of input.toString().split('')){
         
@@ -17,6 +17,12 @@ export function restToDec(input, inputNumberBase){
                 no == 'D'? no = 13:null
                 no == 'E'? no = 14:null
                 no == 'F'? no = 15:null
+                no == 'a'? no = 10:null
+                no == 'b'? no = 11:null
+                no == 'c'? no = 12:null
+                no == 'd'? no = 13:null
+                no == 'e'? no = 14:null
+                no == 'f'? no = 15:null
                 console.log('reached here')
             }
         }
