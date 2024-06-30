@@ -62,7 +62,7 @@ function decToRest(input,outputNumberBase){
                         box.innerText = outputNumberBase
                         break;
                     case 1:    
-                        box.innerText = quo + ' ' + '-' + rem
+                        box.innerText = quo + ' ' + '-' + ' ' + rem
                         break;
                 }
             }
