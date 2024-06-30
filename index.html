@@ -10,7 +10,7 @@
 
     <!-- bg-gradient-to-r from-lime-400 to-lime-500 -->
 </head>
-<body class=" bg-gradient-to-r from-slate-900 to-slate-700">
+<body class=" bg-gradient-to-r from-slate-900 to-slate-700 ">
 
     <div id="heading" class=" p-4 flex justify-center items-center py-12">
         <span class="text-white text-4xl text-center border-b-2 border-white/30 font-bold">Number System Converter</span>
@@ -41,29 +41,29 @@
         </div>
     </section>
 
-    <section id="input-value" class="flex flex-col justify-center my-16 items-center">
+    <section id="input-value" class="flex flex-col justify-center mt-16 mb-4 items-center">
         <div id="input-container" class="flex justify-center items-center p-5">
             <input id="input" type="text" placeholder="write here" class="p-2 my-4 w-[350px] font-bold">
         </div>
 
-        <div id="convert-button" class="flex flex-col justify-center items-center">
+        <div id="" class="flex flex-col justify-center items-center">
             <!-- <button id="convert" class="p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:scale-105 duration-150 text-white backdrop-blur">Convert</button> -->
-            <span class="text-xl text-white p-2"><i class="fa-solid fa-arrow-down"></i></span>
+            <span class="text-2xl text-white p-2"><i class="fa-solid fa-arrow-down"></i></span>
         </div>
 
         <div id="input-container" class="flex justify-center items-center p-5">
-            <p id="result" class="p-2 my-4 w-[350px] bg-white h-[40px] font-bold"></p>
+            <p id="result" class="p-2 my-4 w-[350px] bg-white h-[40px] font-bold overflow-auto"></p>
         </div>
+    </section>
 
-        <div id="convert-button">
-            <button id="convert" class="p-4 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:scale-105 duration-150 text-white backdrop-blur">See Solution</button>
+    <section id="solution-container" class="p-4 flex justify-center items-center ">
+        <div id="solution-boxes" class="p-2 flex w-[250px] flex-wrap">
+            <div class="h-10 w-10  border-b-2 border-r-2 border-whitw"></div>
+            <div id="initial" class="h-10 w-44 text-white text-xl font-bold border-b-2 border-white flex justify-center items-center"></div>
         </div>
     </section>
 
 
-
-    <script type="module" src="func_1.js"></script>
-    <script type="module" src="func_2.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="script.js" async></script>
 </body>
 </html>
